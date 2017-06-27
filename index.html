@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二维码创建</title>
+</head>
+<body>
+	<div id="box"></div>
+</body>
+ <script src="http://www.luqidong.com/demo/qrcode/js/qrcode.js"></script>
+<!--<script src="js/qrcode.js"></script> -->
+<script>
+	var qrcode = new QRCode("box", {
+        width : 96,//设置宽高
+        height : 96
+    });
+    qrcode.makeCode("weixin://wxpay/bizpayurl?pr=1A2eyKd");
+</script>
+</html>
